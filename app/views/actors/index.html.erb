@@ -1,0 +1,16 @@
+<div class="main actor-index">
+      <div class="container">
+        <div class="row">
+
+          <!--
+          To do: Loop through movies and display each one with this HTML-->
+          <% @actors.each do |a| %>
+          <div class="actor col-xs-2">
+            <%= image_tag a.image %>
+            <h3> <%= a.first_name  %> <%= a.last_name %> </h3>
+            <p> <%= a.bio %> </p>
+          </div>
+          <% end %>
+          
+      </div>
+</div>
